@@ -1,7 +1,9 @@
 import express from 'express';
+import RestaurantsController from './restaurants.controller.js';
+import ReviewsController from './reviews.controller.js';
 
 const router = express.Router();
 
-router.route('/').get((req, res) => res.send('K O N N I C H I W A'));
+router.route('/').get(RestaurantsController.apiGetRestaurants);
 
 export default router;
