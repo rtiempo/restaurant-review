@@ -10,7 +10,7 @@ dotenv.config();
 const MongoClient = mongodb.MongoClient;
 const port = process.env.PORT || 8000;
 
-MongoClient.connect(process.env.MONGODB_URI, {
+MongoClient.connect(process.env.RESTAURANT_REVIEWS_DB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
